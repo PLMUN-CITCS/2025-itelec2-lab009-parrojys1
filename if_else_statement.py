@@ -1,10 +1,10 @@
 try:
-    number = int(input("Enter a number: "));
-
+    user_input = input("Enter a number: ")
+    number = int(user_input)
     if number % 2 == 0:
-        print(f"The number {number} is Even");
+        print("The number", number, "is Even.")
     else:
-        print(f"The number {number} is Odd");
+        print("The number", number, "is Odd.")
 
 except ValueError:
-    print("Invalid input! please enter a valid number");
+    print("Invalid input! please put an integer.")
